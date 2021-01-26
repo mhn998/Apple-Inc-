@@ -4,7 +4,7 @@
 
 Link | Description
 -----| -------
-Apple & Products |[Main](index.html)
+Apple & Products |[Main](index)
 Support | [Support]()
 Events | [Events]()
 Contact | [Contact]()
