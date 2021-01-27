@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Mac & Iphone</title>
+    <script src="app.js" async></script>
     <style>
+        input{
+            display:block;
+            margin:20px;
+        }
+
     nav ul {
         display:flex;
         background-color:black;
@@ -21,6 +27,20 @@
             padding:10px;
         }
 
+    button {
+        border:1px solid black;
+        border-radius: 5px;
+        color:white;
+        background-color:black;
+        padding:10px;
+        Font-weight:700;
+
+    }
+    
+    button:hover {
+        cursor:pointer;
+    }
+        
     </style>
 </head>
 
@@ -51,12 +71,51 @@
         <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Five companies in the U.S. information technology industry, along with Amazon, Google, Microsoft, and Facebook.[8][9][10] Its hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, the AirPods wireless earbuds, the AirPods Max headphones, and the HomePod smart speaker line. Apple's software includes iOS, iPadOS, macOS, watchOS, and tvOS operating systems, the iTunes media player, the Safari web browser, the Shazam music identifier, and the iLife and iWork creativity and productivity suites, as well as professional applications like Final Cut Pro X, Logic Pro, and Xcode. Its online services include the iTunes Store, the iOS App Store, Mac App Store, Apple Arcade, Apple Music, Apple TV+, iMessage, and iCloud. Other services include Apple Store, Genius Bar, AppleCare, Apple Pay, Apple Pay Cash, and Apple Card.</p>
         <p>Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer, though Wayne sold his share back within 12 days. It was incorporated as Apple Computer, Inc., in January 1977, and sales of its computers, including the Apple I and Apple II, grew quickly.</p>
 
-        <section id="producrs">
+        <p style="color:grey;text-decoration:underline;"</p>please fill these information in order to let you proceed with checking out in case you like one of our products</p>
+
+        <form id="form" onsubmit="return false;">
+
+            <label for="Name">Name</label>
+            <input name="Name" type="text" id="nameField">  </input>
+            <label for="Phone Number"> Phone number</label>
+            <input name="Phone Number" type="number" id="phone"></input>
+
+        
+        </form>
+
+         <button id="sure" onclick="Done()"> Submit</button>
+
+         <div id="demo22">
+                
+
+        </div>
+
+        
+
+        
+
+
+        <section id="products">
             <div class="MAC">
                 <h3>MAC</h3>
                 <img src="https://www.tech-mag.net/wp-content/uploads/2019/12/macos-catalina-photos-hero-750x430.jpg" width="400px" alt="MAC pic">
                 <p>The Macintosh (mainly Mac since 1998)[1] is a family of personal computers designed, manufactured, and sold by Apple Inc. since January 1984.</p>
             </div>
+            <p> Please Choose one of the following products</p>
+            <ul>
+                <li>Macbook Air</li>
+                <li>Macbook Pro</li>
+                <li>iMac</li>
+            </ul>
+            <button style="margin-bottom:10px;"onclick="Order()"> Order Now</button>
+
+            <div id="demo">
+                
+            </div>
+
+          
+
+
 
             <div class="Iphone">
                 <h3>Iphone</h3>
