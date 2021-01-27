@@ -27,15 +27,13 @@ function Order() {
     function Done() {
         var firstName = document.getElementById("nameField").value;
         var phone = document.getElementById("phone").value;
-        confirm("your name is: " + firstName + "and your phone number is: " + phone)
-        document.getElementById("form").style.display = "none"
-        document.getElementById("sure").style.cssText = "background-color:blue; padding: 0px 20px; margin:10px;"
-        document.getElementById("sure").innerHTML = "DONE"
+        confirm(" your name is: " + firstName + " and your phone number is: " + phone);
+        document.getElementById("form").style.display = "none";
+        document.getElementById("sure").style.cssText = "background-color:blue; padding: 0px 20px; margin:10px;";
+        document.getElementById("sure").innerHTML = "DONE";
 
 
     }
-
-    // document.getElementById("demo").innerHTML = "Hey" + NAME + "Your number is:" + PHONE + "We'll contact you soon" 
 
 
 
