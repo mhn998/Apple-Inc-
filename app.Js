@@ -1,15 +1,15 @@
 
 function Order() {
-    var message; 
+    var message;
     var type = prompt('what type of MAC you want to order?');
 
-    if (type=="Macbook Air") {
+    if (type == "Macbook Air") {
         meassage = alert('This type price is 2000$ , Are you sure you wish to continue?')
 
-    } else if (type=="Macbook Pro") {
+    } else if (type == "Macbook Pro") {
         message = alert('This type price is 1500$, Are you sure you wish to continue?')
 
-    } else if (type=="iMac") {
+    } else if (type == "iMac") {
         message = alert("This type price is 1000$, Are you sure you want to continue?")
     } else {
         message = alert("Sorry, item doesn't exist")
@@ -20,22 +20,55 @@ function Order() {
     document.getElementById("demo").innerHTML = "Thank you for ordering from us, We'll contact you soon. For more info Visit our customer support page"
     document.getElementById("demo").style.cssText = "background-color:red; padding: 20px 0px; text-align:center"
 
-    
 
+
+}
+
+function Done() {
+    var firstName = document.getElementById("nameField").value;
+    var phone = document.getElementById("phone").value;
+    confirm(" your name is: " + firstName + " and your phone number is: " + phone);
+    document.getElementById("form").style.display = "none";
+    document.getElementById("sure").style.cssText = "background-color:blue; padding: 0px 20px; margin:10px;";
+    document.getElementById("sure").innerHTML = "DONE";
+
+
+}
+
+
+
+
+
+    var type = prompt("What type of our products do you like the most?(Iphone, Mac, Ipod)");
+    while (type!== 'Mac' && type !== 'Ipod' && type !== 'Iphone')
+     {
+        type = prompt("please enter a valid product (Iphone,Ipod,Mac)");
     }
-    
-    function Done() {
-        var firstName = document.getElementById("nameField").value;
-        var phone = document.getElementById("phone").value;
-        confirm(" your name is: " + firstName + " and your phone number is: " + phone);
-        document.getElementById("form").style.display = "none";
-        document.getElementById("sure").style.cssText = "background-color:blue; padding: 0px 20px; margin:10px;";
-        document.getElementById("sure").innerHTML = "DONE";
 
+    var product='';
 
+    if(type==='Iphone') {
+        product = '<img class="new-class" src="https://www.macworld.co.uk/cmsdata/features/3633832/iphone-line-up_thumb800.jpg"/>';
+    } else if (type==='Mac') {
+        product = '<img  class="new-class" src="http://pcstuff-lb.com/images/categories/7a6adcapple.jpg"/>';
+    } else if (type==='Ipod') {
+        product = '<img class="new-class" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipod-touch-select-2019_GEO_US?wid=808&amp;hei=1087&amp;fmt=png-alpha&amp;qlt=80&amp;.v=1610513556000"/>';
     }
 
+    var result ='';
 
+    result= product;
+
+    var numItems = prompt("how many Items do you wish to see?")
+
+    for (var i =1; i<numItems; i++) {
+       result+= product;
+    }
+
+    document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + result;
+    // ------ Working 
+    
+   
 
 
 
