@@ -50,7 +50,7 @@ function Done() {
     if(type==='Iphone') {
         product = '<img class="new-class" src="https://www.macworld.co.uk/cmsdata/features/3633832/iphone-line-up_thumb800.jpg"/>';
     } else if (type==='Mac') {
-        product = '<img  class="new-class" src="http://pcstuff-lb.com/images/categories/7a6adcapple.jpg"/>';
+        product = '<img  class="new-class" src="https://cdn.mos.cms.futurecdn.net/9tB3Dt8vyoK2okrwBE8MW7-970-80.jpg.webp"/>';
     } else if (type==='Ipod') {
         product = '<img class="new-class" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipod-touch-select-2019_GEO_US?wid=808&amp;hei=1087&amp;fmt=png-alpha&amp;qlt=80&amp;.v=1610513556000"/>';
     }
