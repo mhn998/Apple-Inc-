@@ -40,25 +40,31 @@ function Done() {
     while (type!== 'Mac' && type !== 'Ipod' && type !== 'Iphone')
      {
         var type = prompt("What type of our products do you like the most?(Iphone, Mac, Ipod)");
+        var product='';
+        if(type==='Iphone') {
+            product = '<img class="new-class" src="https://www.macworld.co.uk/cmsdata/features/3633832/iphone-line-up_thumb800.jpg"/>';
+        } else if (type==='Mac') {
+            product = '<img  class="new-class" src="https://cdn.mos.cms.futurecdn.net/9tB3Dt8vyoK2okrwBE8MW7-970-80.jpg.webp"/>';
+        } else if (type==='Ipod') {
+            product = '<img class="new-class" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipod-touch-select-2019_GEO_US?wid=808&amp;hei=1087&amp;fmt=png-alpha&amp;qlt=80&amp;.v=1610513556000"/>';
+        }
+
+        if (type == 'Mac' || type == 'Ipod' || type == 'Iphone') {
+
+            var numItems = prompt("how many Items do you wish to see?")
+
+            for (var i =1; i<numItems; i++) {
+                document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + product;
+                product+=product;
+            }
+            }  
     }
 
-    var product='';
-
-    if(type==='Iphone') {
-        product = '<img class="new-class" src="https://www.macworld.co.uk/cmsdata/features/3633832/iphone-line-up_thumb800.jpg"/>';
-    } else if (type==='Mac') {
-        product = '<img  class="new-class" src="https://cdn.mos.cms.futurecdn.net/9tB3Dt8vyoK2okrwBE8MW7-970-80.jpg.webp"/>';
-    } else if (type==='Ipod') {
-        product = '<img class="new-class" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipod-touch-select-2019_GEO_US?wid=808&amp;hei=1087&amp;fmt=png-alpha&amp;qlt=80&amp;.v=1610513556000"/>';
-    }
+   
+   
 
 
-    var numItems = prompt("how many Items do you wish to see?")
-
-    for (var i =1; i<numItems; i++) {
-        document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + product;
-        product+=product;
-    }
+    
 
     // ------ Working 
     
