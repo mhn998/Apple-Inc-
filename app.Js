@@ -37,12 +37,9 @@ function Done() {
 
 
 
-
-
-    var type = prompt("What type of our products do you like the most?(Iphone, Mac, Ipod)");
     while (type!== 'Mac' && type !== 'Ipod' && type !== 'Iphone')
      {
-        type = prompt("please enter a valid product (Iphone,Ipod,Mac)");
+        var type = prompt("What type of our products do you like the most?(Iphone, Mac, Ipod)");
     }
 
     var product='';
@@ -55,17 +52,14 @@ function Done() {
         product = '<img class="new-class" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipod-touch-select-2019_GEO_US?wid=808&amp;hei=1087&amp;fmt=png-alpha&amp;qlt=80&amp;.v=1610513556000"/>';
     }
 
-    var result ='';
-
-    result= product;
 
     var numItems = prompt("how many Items do you wish to see?")
 
     for (var i =1; i<numItems; i++) {
-       result+= product;
+        document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + product;
+        product+=product;
     }
 
-    document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + result;
     // ------ Working 
     
    
