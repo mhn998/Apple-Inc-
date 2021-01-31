@@ -35,10 +35,9 @@ function Done() {
 
 }
 
-
-
-    while (type!== 'Mac' && type !== 'Ipod' && type !== 'Iphone')
-     {
+    function getProductandNumbers () {
+        while (type!== 'Mac' && type !== 'Ipod' && type !== 'Iphone')
+    {
         var type = prompt("What type of our products do you like the most?(Iphone, Mac, Ipod)");
         var product='';
         if(type==='Iphone') {
@@ -53,23 +52,12 @@ function Done() {
 
             var numItems = prompt("how many Items do you wish to see?")
 
-            for (var i =1; i<numItems; i++) {
-                document.getElementById("insert").innerHTML = "<h3> Please take a look at this</h3>" + product;
+            for (var i =0; i<numItems; i++) {
+                document.getElementById("insert").innerHTML =  product;
                 product+=product;
             }
             }  
-    }
+}
+}
 
-   
-   
-
-
-    
-
-    // ------ Working 
-    
-   
-
-
-
-
+getProductandNumbers();
